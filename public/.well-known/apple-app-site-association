@@ -1,0 +1,16 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["9GASA5SJ87.com.tripseek.app"],
+        "components": [
+          {
+            "/": "/join/*",
+            "comment": "Match all join invite links"
+          }
+        ]
+      }
+    ]
+  }
+}

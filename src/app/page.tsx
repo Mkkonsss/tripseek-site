@@ -7,9 +7,9 @@ export default function Home() {
     <main className="flex flex-col min-h-screen bg-white text-black">
 
       {/* Hero — full viewport with photo, overlay nav, split layout */}
-      <section className="relative w-full h-screen p-4">
-        {/* Rounded inner container */}
-        <div className="relative w-full h-full rounded-3xl overflow-hidden">
+      <section className="relative w-full h-screen">
+        {/* Full-bleed container */}
+        <div className="relative w-full h-full overflow-hidden">
           {/* Background image */}
           <Image
             src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=80"
@@ -35,7 +35,7 @@ export default function Home() {
             {/* Right — description + scroll hint */}
             <div className="max-w-sm flex flex-col items-end gap-8">
               <p className="text-base text-white/70 leading-relaxed text-right">
-                Bring your bookings, places, and plans together. Tripseek keeps everything connected and adapts when things change.
+                Plan smarter, explore deeper, and let AI handle the details — so you can focus on the experience.
               </p>
               {/* Scroll down arrow */}
               <div className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">

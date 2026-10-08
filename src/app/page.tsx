@@ -4,7 +4,7 @@ import Nav from "@/components/nav";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen bg-white text-black">
+    <main className="flex flex-col min-h-screen bg-black text-black">
 
       {/* Hero — full viewport with photo, overlay nav, split layout */}
       <section className="relative w-full h-screen">
@@ -50,6 +50,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="bg-white">
 
       {/* AI three points */}
       <section className="px-6 max-w-6xl mx-auto w-full">
@@ -292,6 +294,7 @@ export default function Home() {
         </div>
       </footer>
 
+      </div>
     </main>
   );
 }

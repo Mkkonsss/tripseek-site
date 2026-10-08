@@ -35,7 +35,7 @@ export default function Home() {
             {/* Right — description + scroll hint */}
             <div className="max-w-sm flex flex-col items-end gap-8">
               <p className="text-base text-white/70 leading-relaxed text-right">
-                Plan smarter, explore deeper, and let AI handle the details — so you can focus on the experience.
+                Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.
               </p>
               {/* Scroll down arrow */}
               <div className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">

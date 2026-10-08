@@ -2,64 +2,56 @@ import Link from "next/link";
 import Image from "next/image";
 import Nav from "@/components/nav";
 
-
-
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-white text-black">
 
-      {/* Nav */}
-      <Nav />
+      {/* Hero — full viewport with photo, overlay nav, split layout */}
+      <section className="relative w-full h-screen p-4">
+        {/* Rounded inner container */}
+        <div className="relative w-full h-full rounded-3xl overflow-hidden">
+          {/* Background image */}
+          <Image
+            src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=2400&q=80"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Gradient overlay — darker on left for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/35 to-black/15" />
 
-      {/* Hero */}
-      <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden">
-        {/* Background image */}
-        <Image
-          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80"
-          alt=""
-          fill
-          className="object-cover"
-          priority
-        />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/55" />
-        {/* Content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-6">
-            Your whole trip.<br />Organized by AI.
-          </h1>
-          <p className="text-lg sm:text-xl text-white/70 max-w-xl mb-10">
-            Bring your bookings, places, and plans together. Tripseek keeps everything connected and adapts when things change.
-          </p>
-          <div className="flex flex-row gap-3 justify-center">
-            <a
-              href="https://apps.apple.com"
-              className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-              </svg>
-              App Store
-            </a>
-            <a
-              href="https://play.google.com"
-              className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
-            >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.18 23.76c.3.17.64.24.99.19l12.6-7.27-2.72-2.72-10.87 9.8zM.54 1.7C.2 2.03 0 2.56 0 3.26v17.48c0 .7.2 1.23.55 1.56l.08.08 9.79-9.79v-.23L.62 1.62.54 1.7zM20.1 10.53l-2.54-1.47-3.03 3.03 3.03 3.03 2.56-1.48c.73-.42.73-1.11-.02-1.55v-.56zM4.17.24L16.77 7.5l-2.72 2.72L3.18.44a1.13 1.13 0 011-.2z"/>
-              </svg>
-              Google Play
-            </a>
+          {/* Nav overlaid */}
+          <Nav />
+
+          {/* Hero content — bottom aligned, split layout */}
+          <div className="absolute bottom-0 left-0 right-0 px-10 pb-12 flex items-end justify-between gap-12">
+            {/* Left — headline */}
+            <div className="max-w-xl">
+              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05]">
+                Your whole trip.<br />Organized by AI.
+              </h1>
+            </div>
+            {/* Right — description + scroll hint */}
+            <div className="max-w-sm flex flex-col items-end gap-8">
+              <p className="text-base text-white/70 leading-relaxed text-right">
+                Bring your bookings, places, and plans together. Tripseek keeps everything connected and adapts when things change.
+              </p>
+              {/* Scroll down arrow */}
+              <div className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Features */}
+      {/* AI three points */}
       <section className="px-6 max-w-6xl mx-auto w-full">
-
-        {/* AI three points */}
-        <div className="border-y border-black/8 py-8 my-8">
-          <p className="text-center text-sm text-black/40 font-medium mb-6">AI that...</p>
+        <div className="border-b border-black/8 py-12">
+          <p className="text-center text-sm text-black/40 font-medium mb-8">AI that...</p>
           <div className="grid grid-cols-3 divide-x divide-black/8">
             <div className="px-8 flex gap-4 items-start">
               <svg className="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -88,28 +80,6 @@ export default function Home() {
                 <div className="text-sm text-black/40 leading-relaxed">Spots changes and helps before you need to ask</div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Globe + description */}
-        <div className="flex flex-col lg:flex-row items-center gap-8 pt-4 pb-16">
-          <div className="lg:w-1/2 flex justify-center">
-            <Image
-              src="/hero-globe.png"
-              alt="Travel the world with Tripseek"
-              width={500}
-              height={500}
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-md"
-              priority
-            />
-          </div>
-          <div className="lg:w-1/2 flex flex-col gap-4">
-            <p className="text-2xl font-semibold tracking-tight leading-snug">
-              Bring your bookings, places, plans, and inspiration together.
-            </p>
-            <p className="text-lg text-black/50 leading-relaxed">
-              Tripseek helps you build the trip, keeps everything connected, and adapts when plans change.
-            </p>
           </div>
         </div>
       </section>
@@ -154,12 +124,9 @@ export default function Home() {
               },
             ].map((place) => (
               <div key={place.name} className="relative rounded-2xl overflow-hidden aspect-[3/4] transition-transform duration-300 ease-out hover:-translate-y-2 hover:shadow-2xl">
-                {/* Full bleed photo */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={place.photo} alt={place.name} className="absolute inset-0 w-full h-full object-cover" />
-                {/* Gradient overlay */}
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.18) 65%, rgba(0,0,0,0.72) 100%)" }} />
-                {/* Bottom text */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 pb-5">
                   <span className="inline-block text-white/80 text-[10px] font-semibold uppercase tracking-widest mb-2">{place.category}</span>
                   <div className="text-white font-bold text-base leading-tight mb-2">{place.name}</div>
@@ -276,7 +243,7 @@ export default function Home() {
       <footer className="border-t border-black/8 py-8 px-6">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/30">
           <Image src="/logo-dark.png" alt="Tripseek" width={100} height={28} className="h-6 w-auto" />
-          <span>© {new Date().getFullYear()} Tripseek. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Tripseek. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link>

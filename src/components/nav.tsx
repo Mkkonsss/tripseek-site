@@ -3,19 +3,19 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
-    <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-black/8">
-      <div className="flex items-center justify-between px-6 py-4 max-w-5xl mx-auto">
+    <nav className="absolute top-0 left-0 right-0 z-50">
+      <div className="flex items-center justify-between px-8 py-5 max-w-7xl mx-auto">
         <Link href="/">
-          <Image src="/logo-dark.png" alt="Tripseek" width={240} height={64} className="h-11 w-auto" />
+          <Image src="/logo-light.png" alt="Tripseek" width={240} height={64} className="h-9 w-auto" />
         </Link>
         <div className="flex items-center gap-6 text-sm">
-          <Link href="/support" className="text-black/40 hover:text-black transition-colors">Support</Link>
-          <Link href="/contact" className="text-black/40 hover:text-black transition-colors">Contact</Link>
-          <Link href="/privacy" className="text-black/40 hover:text-black transition-colors">Privacy</Link>
-          <Link href="/terms" className="text-black/40 hover:text-black transition-colors">Terms</Link>
+          <Link href="/support" className="text-white/60 hover:text-white transition-colors">Support</Link>
+          <Link href="/contact" className="text-white/60 hover:text-white transition-colors">Contact</Link>
+          <Link href="/privacy" className="text-white/60 hover:text-white transition-colors">Privacy</Link>
+          <Link href="/terms" className="text-white/60 hover:text-white transition-colors">Terms</Link>
           <a
             href="https://apps.apple.com"
-            className="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-black/80 transition-colors"
+            className="bg-white text-black px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors"
           >
             Download
           </a>

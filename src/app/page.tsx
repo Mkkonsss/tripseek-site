@@ -84,6 +84,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Globe + description */}
+      <section className="px-6 max-w-6xl mx-auto w-full">
+        <div className="flex flex-col lg:flex-row items-center gap-8 pt-4 pb-16">
+          <div className="lg:w-1/2 flex justify-center">
+            <Image
+              src="/hero-globe.png"
+              alt="Travel the world with Tripseek"
+              width={500}
+              height={500}
+              className="w-full max-w-xs sm:max-w-sm lg:max-w-md"
+            />
+          </div>
+          <div className="lg:w-1/2 flex flex-col gap-4">
+            <p className="text-2xl font-semibold tracking-tight leading-snug">
+              Bring your bookings, places, plans, and inspiration together.
+            </p>
+            <p className="text-lg text-black/50 leading-relaxed">
+              Tripseek helps you build the trip, keeps everything connected, and adapts when plans change.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Discover places */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">

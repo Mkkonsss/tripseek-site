@@ -38,7 +38,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-black/90 backdrop-blur-lg px-6 pb-6 flex flex-col gap-4 text-sm">
+        <div className="md:hidden bg-white/10 backdrop-blur-xl px-6 pb-6 flex flex-col gap-4 text-sm">
           <Link href="/support" className="text-white/70 hover:text-white py-2" onClick={() => setOpen(false)}>Support</Link>
           <Link href="/contact" className="text-white/70 hover:text-white py-2" onClick={() => setOpen(false)}>Contact</Link>
           <Link href="/privacy" className="text-white/70 hover:text-white py-2" onClick={() => setOpen(false)}>Privacy</Link>

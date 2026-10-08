@@ -12,23 +12,29 @@ export default function Home() {
       <Nav />
 
       {/* Hero */}
-      <section className="px-6 pt-16 pb-0 max-w-6xl mx-auto w-full">
-        {/* Centered headline + CTAs */}
-        <div className="flex flex-col items-center text-center mb-12">
-          <h1 className="mb-8">
-            <Image
-              src="/hero-headline.png"
-              alt="Your whole trip. Organized by AI."
-              width={900}
-              height={300}
-              className="w-full max-w-2xl"
-              priority
-            />
+      <section className="relative w-full min-h-[85vh] flex items-center justify-center overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=2400&q=80"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black/55" />
+        {/* Content */}
+        <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-white tracking-tight leading-[1.1] mb-6">
+            Your whole trip.<br />Organized by AI.
           </h1>
+          <p className="text-lg sm:text-xl text-white/70 max-w-xl mb-10">
+            Bring your bookings, places, and plans together. Tripseek keeps everything connected and adapts when things change.
+          </p>
           <div className="flex flex-row gap-3 justify-center">
             <a
               href="https://apps.apple.com"
-              className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-black/80 transition-colors"
+              className="inline-flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -37,7 +43,7 @@ export default function Home() {
             </a>
             <a
               href="https://play.google.com"
-              className="inline-flex items-center gap-2 border border-black/15 text-black px-6 py-3 rounded-full text-sm font-semibold hover:bg-black/5 transition-colors"
+              className="inline-flex items-center gap-2 border border-white/30 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/10 transition-colors"
             >
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M3.18 23.76c.3.17.64.24.99.19l12.6-7.27-2.72-2.72-10.87 9.8zM.54 1.7C.2 2.03 0 2.56 0 3.26v17.48c0 .7.2 1.23.55 1.56l.08.08 9.79-9.79v-.23L.62 1.62.54 1.7zM20.1 10.53l-2.54-1.47-3.03 3.03 3.03 3.03 2.56-1.48c.73-.42.73-1.11-.02-1.55v-.56zM4.17.24L16.77 7.5l-2.72 2.72L3.18.44a1.13 1.13 0 011-.2z"/>
@@ -46,6 +52,10 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* Features */}
+      <section className="px-6 max-w-6xl mx-auto w-full">
 
         {/* AI three points */}
         <div className="border-y border-black/8 py-8 my-8">

@@ -18,27 +18,27 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          {/* Gradient overlay — darker on left for text readability */}
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/35 to-black/15" />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10 md:bg-gradient-to-r md:from-black/60 md:via-black/35 md:to-black/15" />
 
           {/* Nav overlaid */}
           <Nav />
 
-          {/* Hero content — bottom aligned, split layout */}
-          <div className="absolute bottom-0 left-0 right-0 px-10 pb-12 flex items-end justify-between gap-12">
+          {/* Hero content */}
+          <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 md:px-10 md:pb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-12">
             {/* Left — headline */}
             <div className="max-w-xl">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05]">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05]">
                 Your whole trip.<br />Organized by AI.
               </h1>
             </div>
             {/* Right — description + scroll hint */}
-            <div className="max-w-sm flex flex-col items-end gap-8">
-              <p className="text-base text-white/70 leading-relaxed text-right">
+            <div className="max-w-sm flex flex-col items-start md:items-end gap-6 md:gap-8">
+              <p className="text-sm md:text-base text-white/70 leading-relaxed md:text-right">
                 Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.
               </p>
-              {/* Scroll down arrow */}
-              <div className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center">
+              {/* Scroll down arrow — hidden on mobile */}
+              <div className="hidden md:flex w-10 h-10 rounded-full border border-white/30 items-center justify-center">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M12 5v14M19 12l-7 7-7-7"/>
                 </svg>
@@ -50,10 +50,10 @@ export default function Home() {
 
       {/* AI three points */}
       <section className="px-6 max-w-6xl mx-auto w-full">
-        <div className="border-b border-black/8 py-12">
-          <p className="text-center text-sm text-black/40 font-medium mb-8">AI that...</p>
-          <div className="grid grid-cols-3 divide-x divide-black/8">
-            <div className="px-8 flex gap-4 items-start">
+        <div className="border-b border-black/8 py-10 md:py-12">
+          <p className="text-center text-sm text-black/40 font-medium mb-6 md:mb-8">AI that...</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 md:divide-x divide-black/8">
+            <div className="px-0 md:px-8 flex gap-4 items-start">
               <svg className="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
               </svg>
@@ -62,7 +62,7 @@ export default function Home() {
                 <div className="text-sm text-black/40 leading-relaxed">Learns your preferences and planning style</div>
               </div>
             </div>
-            <div className="px-8 flex gap-4 items-start">
+            <div className="px-0 md:px-8 flex gap-4 items-start">
               <svg className="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/>
               </svg>
@@ -71,7 +71,7 @@ export default function Home() {
                 <div className="text-sm text-black/40 leading-relaxed">Keeps bookings, places, and plans connected</div>
               </div>
             </div>
-            <div className="px-8 flex gap-4 items-start">
+            <div className="px-0 md:px-8 flex gap-4 items-start">
               <svg className="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
               </svg>
@@ -108,12 +108,12 @@ export default function Home() {
       </section>
 
       {/* Discover places */}
-      <section className="py-24 px-6">
+      <section className="py-16 md:py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-10">
+          <div className="mb-8 md:mb-10">
             <p className="text-xs font-semibold uppercase tracking-widest text-black/30 mb-3">Explore</p>
-            <h2 className="text-4xl font-bold tracking-tight">Discover real places<br />you&apos;ll love.</h2>
-            <p className="text-lg text-black/50 mt-4 max-w-lg">Not the same tourist list everyone gets. Tripseek surfaces places matched to how you travel.</p>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Discover real places<br />you&apos;ll love.</h2>
+            <p className="text-base md:text-lg text-black/50 mt-4 max-w-lg">Not the same tourist list everyone gets. Tripseek surfaces places matched to how you travel.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
             {[
@@ -169,10 +169,10 @@ export default function Home() {
       </section>
 
       {/* Chat section */}
-      <section className="py-24 px-6 border-t border-black/8">
+      <section className="py-16 md:py-24 px-6 border-t border-black/8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-5xl font-bold tracking-tight mb-4">Just ask Tripseek.</h2>
-          <p className="text-lg text-black/50 leading-relaxed mb-10">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Just ask Tripseek.</h2>
+          <p className="text-base md:text-lg text-black/50 leading-relaxed mb-8 md:mb-10">
             Plan, explore, make changes, or get help on the go. Tripseek understands your trip and works with everything already in it.
           </p>
 
@@ -235,10 +235,10 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 px-6 border-t border-black/8">
+      <section className="py-16 md:py-24 px-6 border-t border-black/8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-5xl font-bold tracking-tight mb-5">Ready to plan<br />your next trip?</h2>
-          <p className="text-lg text-black/50 mb-10">Download Tripseek free and start planning in minutes.</p>
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-5">Ready to plan<br />your next trip?</h2>
+          <p className="text-base md:text-lg text-black/50 mb-8 md:mb-10">Download Tripseek free and start planning in minutes.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="https://apps.apple.com"

@@ -24,8 +24,8 @@ export default function Home() {
           {/* Nav overlaid */}
           <Nav />
 
-          {/* Hero content — vertically centered */}
-          <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+          {/* Hero content — lower third */}
+          <div className="absolute inset-0 flex flex-col justify-end pb-24 md:pb-28 px-6 md:px-10">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-12 max-w-7xl mx-auto w-full">
               {/* Left — headline */}
               <div className="max-w-xl">
@@ -87,8 +87,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Globe + description */}
-      <section className="px-6 max-w-5xl mx-auto w-full py-16 md:py-24">
+      {/* Globe + description — desktop only */}
+      <section className="hidden md:block px-6 max-w-5xl mx-auto w-full py-16 md:py-24">
         {/* Centered heading */}
         <div className="text-center mb-10 md:mb-14">
           <p className="text-2xl md:text-3xl font-semibold tracking-tight leading-snug mb-4">

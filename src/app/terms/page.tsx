@@ -11,7 +11,7 @@ export default function TermsOfService() {
   return (
     <main className="flex flex-col min-h-screen">
       {/* Nav */}
-      <Nav />
+      <Nav variant="dark" />
 
       <article className="max-w-2xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Terms of Service</h1>

@@ -78,7 +78,7 @@ const faqs = [
 export default function Support() {
   return (
     <main className="flex flex-col min-h-screen">
-      <Nav />
+      <Nav variant="dark" />
 
       <section className="max-w-2xl mx-auto px-6 py-20 w-full flex-1">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Support</h1>

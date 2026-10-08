@@ -24,26 +24,29 @@ export default function Home() {
           {/* Nav overlaid */}
           <Nav />
 
-          {/* Hero content */}
-          <div className="absolute bottom-0 left-0 right-0 px-6 pb-10 md:px-10 md:pb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-12">
-            {/* Left — headline */}
-            <div className="max-w-xl">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05]">
-                Your whole trip.<br />Organized by AI.
-              </h1>
-            </div>
-            {/* Right — description + scroll hint */}
-            <div className="max-w-sm flex flex-col items-start md:items-end gap-6 md:gap-8">
-              <p className="text-sm md:text-base text-white/70 leading-relaxed md:text-right">
-                Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.
-              </p>
-              {/* Scroll down arrow — hidden on mobile */}
-              <div className="hidden md:flex w-10 h-10 rounded-full border border-white/30 items-center justify-center">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 5v14M19 12l-7 7-7-7"/>
-                </svg>
+          {/* Hero content — vertically centered */}
+          <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-12 max-w-7xl mx-auto w-full">
+              {/* Left — headline */}
+              <div className="max-w-xl">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05]">
+                  Your whole trip.<br />Organized by AI.
+                </h1>
+              </div>
+              {/* Right — description */}
+              <div className="max-w-sm flex flex-col items-start md:items-end gap-6">
+                <p className="text-sm md:text-base text-white/70 leading-relaxed md:text-right">
+                  Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.
+                </p>
               </div>
             </div>
+          </div>
+
+          {/* Scroll down arrow — bottom center */}
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex w-10 h-10 rounded-full border border-white/30 items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
           </div>
         </div>
       </section>
@@ -97,34 +100,34 @@ export default function Home() {
         </div>
 
         {/* Globe with floating feature tags */}
-        <div className="relative flex justify-center items-center">
+        <div className="relative flex justify-center items-center py-4">
           {/* Globe */}
           <Image
             src="/hero-globe.png"
             alt="Travel the world with Tripseek"
-            width={320}
-            height={320}
-            className="w-48 h-48 md:w-64 md:h-64"
+            width={500}
+            height={500}
+            className="w-full max-w-xs sm:max-w-sm lg:max-w-md"
           />
 
-          {/* Floating tags — positioned around the globe */}
-          <div className="absolute top-0 left-1/2 -translate-x-[140%] md:-translate-x-[180%] -translate-y-2">
-            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+          {/* Floating tags — light, minimal pills around the globe */}
+          <div className="absolute top-[5%] left-[5%] md:left-[10%]">
+            <div className="border border-black/10 bg-white text-black/60 text-xs font-medium px-4 py-2 rounded-full shadow-sm whitespace-nowrap">
               Flights & Hotels
             </div>
           </div>
-          <div className="absolute top-1/4 right-0 md:right-[10%] translate-x-2">
-            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+          <div className="absolute top-[15%] right-[2%] md:right-[8%]">
+            <div className="border border-black/10 bg-white text-black/60 text-xs font-medium px-4 py-2 rounded-full shadow-sm whitespace-nowrap">
               AI Itineraries
             </div>
           </div>
-          <div className="absolute bottom-1/4 left-0 md:left-[10%] -translate-x-2">
-            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+          <div className="absolute bottom-[20%] left-[2%] md:left-[6%]">
+            <div className="border border-black/10 bg-white text-black/60 text-xs font-medium px-4 py-2 rounded-full shadow-sm whitespace-nowrap">
               Saved Places
             </div>
           </div>
-          <div className="absolute bottom-0 left-1/2 translate-x-[40%] md:translate-x-[80%] translate-y-2">
-            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+          <div className="absolute bottom-[5%] right-[5%] md:right-[12%]">
+            <div className="border border-black/10 bg-white text-black/60 text-xs font-medium px-4 py-2 rounded-full shadow-sm whitespace-nowrap">
               Real-time Alerts
             </div>
           </div>

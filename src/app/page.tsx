@@ -276,15 +276,6 @@ export default function Home() {
               </svg>
               Download on App Store
             </a>
-            <a
-              href="https://play.google.com"
-              className="inline-flex items-center justify-center gap-2.5 border border-black/15 text-black px-8 py-4 rounded-full text-sm font-semibold hover:bg-black/4 transition-colors"
-            >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M3.18 23.76c.3.17.64.24.99.19l12.6-7.27-2.72-2.72-10.87 9.8zM.54 1.7C.2 2.03 0 2.56 0 3.26v17.48c0 .7.2 1.23.55 1.56l.08.08 9.79-9.79v-.23L.62 1.62.54 1.7zM20.1 10.53l-2.54-1.47-3.03 3.03 3.03 3.03 2.56-1.48c.73-.42.73-1.11-.02-1.55v-.56zM4.17.24L16.77 7.5l-2.72 2.72L3.18.44a1.13 1.13 0 011-.2z"/>
-              </svg>
-              Get it on Google Play
-            </a>
           </div>
         </div>
       </section>

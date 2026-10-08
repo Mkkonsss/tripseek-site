@@ -85,24 +85,48 @@ export default function Home() {
       </section>
 
       {/* Globe + description */}
-      <section className="px-6 max-w-6xl mx-auto w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-8 pt-4 pb-16">
-          <div className="lg:w-1/2 flex justify-center">
-            <Image
-              src="/hero-globe.png"
-              alt="Travel the world with Tripseek"
-              width={500}
-              height={500}
-              className="w-full max-w-xs sm:max-w-sm lg:max-w-md"
-            />
+      <section className="px-6 max-w-5xl mx-auto w-full py-16 md:py-24">
+        {/* Centered heading */}
+        <div className="text-center mb-10 md:mb-14">
+          <p className="text-2xl md:text-3xl font-semibold tracking-tight leading-snug mb-4">
+            Bring your bookings, places, plans,<br className="hidden md:block" /> and inspiration together.
+          </p>
+          <p className="text-base md:text-lg text-black/50 leading-relaxed max-w-lg mx-auto">
+            Tripseek helps you build the trip, keeps everything connected, and adapts when plans change.
+          </p>
+        </div>
+
+        {/* Globe with floating feature tags */}
+        <div className="relative flex justify-center items-center">
+          {/* Globe */}
+          <Image
+            src="/hero-globe.png"
+            alt="Travel the world with Tripseek"
+            width={320}
+            height={320}
+            className="w-48 h-48 md:w-64 md:h-64"
+          />
+
+          {/* Floating tags — positioned around the globe */}
+          <div className="absolute top-0 left-1/2 -translate-x-[140%] md:-translate-x-[180%] -translate-y-2">
+            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+              Flights & Hotels
+            </div>
           </div>
-          <div className="lg:w-1/2 flex flex-col gap-4">
-            <p className="text-2xl font-semibold tracking-tight leading-snug">
-              Bring your bookings, places, plans, and inspiration together.
-            </p>
-            <p className="text-lg text-black/50 leading-relaxed">
-              Tripseek helps you build the trip, keeps everything connected, and adapts when plans change.
-            </p>
+          <div className="absolute top-1/4 right-0 md:right-[10%] translate-x-2">
+            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+              AI Itineraries
+            </div>
+          </div>
+          <div className="absolute bottom-1/4 left-0 md:left-[10%] -translate-x-2">
+            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+              Saved Places
+            </div>
+          </div>
+          <div className="absolute bottom-0 left-1/2 translate-x-[40%] md:translate-x-[80%] translate-y-2">
+            <div className="bg-black text-white text-xs font-medium px-4 py-2 rounded-full shadow-lg whitespace-nowrap">
+              Real-time Alerts
+            </div>
           </div>
         </div>
       </section>

@@ -13,13 +13,15 @@ export const metadata: Metadata = {
   },
   title: "Tripseek — AI Travel Planner",
   description:
-    "Plan smarter trips with AI-powered itineraries, personalized recommendations, and real-time travel insights.",
+    "Your whole trip, organized by AI. Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.",
   metadataBase: new URL("https://tripseekapp.com"),
   openGraph: {
     title: "Tripseek — AI Travel Planner",
-    description: "Plan smarter trips with AI-powered itineraries.",
+    description:
+      "Your whole trip, organized by AI. Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.",
     url: "https://tripseekapp.com",
     siteName: "Tripseek",
+    images: [{ url: "/og-image.png" }],
   },
 };
 

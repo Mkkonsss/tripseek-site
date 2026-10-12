@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geist = Geist({
@@ -34,6 +35,11 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-white text-black">
         {children}
+        <Script
+          src="https://emrldtp.cc/NTg0NjIx.js?t=584621"
+          strategy="afterInteractive"
+          data-cmp-ab="2"
+        />
       </body>
     </html>
   );

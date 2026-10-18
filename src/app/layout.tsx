@@ -12,14 +12,14 @@ export const metadata: Metadata = {
   verification: {
     google: "2JCZYPUzghoqHH2N5qBZKVUGuS_tuPcPnDXN1A8H1D8",
   },
-  title: "Tripseek — AI Travel Planner",
+  title: "Tripseek — AI Travel Companion",
   description:
-    "Your whole trip, organized by AI. Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.",
+    "Tripseek is your personal AI travel companion. Get personalized picks for every trip, stay ahead with smart travel alerts, manage bookings and plans in one place, discover places you'll love, turn inspiration into real trips, and plan together with friends.",
   metadataBase: new URL("https://tripseekapp.com"),
   openGraph: {
-    title: "Tripseek — AI Travel Planner",
+    title: "Tripseek — AI Travel Companion",
     description:
-      "Your whole trip, organized by AI. Plan smarter, explore deeper, and let AI handle the details so you can focus on the experience.",
+      "Tripseek is your personal AI travel companion. Get personalized picks for every trip, stay ahead with smart travel alerts, manage bookings and plans in one place, discover places you'll love, turn inspiration into real trips, and plan together with friends.",
     url: "https://tripseekapp.com",
     siteName: "Tripseek",
     images: [{ url: "/og-image.png" }],

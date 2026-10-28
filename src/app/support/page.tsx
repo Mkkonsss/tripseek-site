@@ -22,7 +22,7 @@ const faqs = [
       },
       {
         q: "Do I need an account to use Tripseek?",
-        a: "You can browse the app without an account, but creating a free account lets you save trips, sync across devices, and access the AI chat.",
+        a: "Yes. A free account lets Tripseek sync your trips across your devices, share trips with friends, match booking emails you forward, and keep track of your plan. Sign up with your email or with Sign in with Apple.",
       },
     ],
   },
@@ -48,7 +48,7 @@ const faqs = [
     items: [
       {
         q: "How do I delete my account?",
-        a: "You can delete your account from the Profile tab in the app under Settings → Delete Account. This permanently removes all your data within 30 days.",
+        a: "In the app, go to Profile → Settings → Account → Delete account. This deletes your account and its data from our servers right away; backup copies are removed within 30 days.",
       },
       {
         q: "Is my data secure?",
@@ -56,7 +56,7 @@ const faqs = [
       },
       {
         q: "Can I export my trip data?",
-        a: "Trip export is on our roadmap. In the meantime, you can contact support@tripseekapp.com and we can help you retrieve your data.",
+        a: "Yes. In the app, go to Profile → Settings → Account → Export my data to save your trips and preferences as a file.",
       },
     ],
   },

@@ -15,7 +15,7 @@ export default function TermsOfService() {
 
       <article className="max-w-2xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Terms of Service</h1>
-        <p className="text-sm text-black/40 mb-12">Last updated: October 3, 2026</p>
+        <p className="text-sm text-black/40 mb-12">Last updated: October 27, 2026</p>
 
         <div className="prose prose-sm max-w-none space-y-10 text-black/80 leading-relaxed">
 
@@ -88,7 +88,21 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">8. Intellectual Property</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">8. Tripseek+ Subscriptions</h2>
+            <p className="mb-3">
+              Tripseek+ is an optional auto-renewing subscription, offered monthly or yearly through Apple&apos;s App Store. What it includes and its price in your currency are shown in the app before you subscribe.
+            </p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Payment is charged to your Apple ID account when you confirm the purchase.</li>
+              <li>Your subscription renews automatically at the end of each period, at the then-current price, unless you cancel at least 24 hours before the period ends. Your Apple ID account is charged for the renewal within 24 hours before the period ends.</li>
+              <li>You can manage or cancel your subscription anytime in your iPhone&apos;s Settings &rarr; [your name] &rarr; Subscriptions. If you cancel, you keep Tripseek+ until the end of the period you&apos;ve paid for.</li>
+              <li>Refunds are handled by Apple under Apple&apos;s policies; you can request one at reportaproblem.apple.com.</li>
+              <li>Tripseek+ usage limits (such as AI trip plans, AI messages, and imports per month) are shown in the app and reset each month.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-lg font-semibold text-black mb-3">9. Intellectual Property</h2>
             <p className="mb-3">
               The Tripseek app, including its design, logo, features, and underlying technology, is owned by Tripseek and protected by applicable intellectual property laws.
             </p>
@@ -98,49 +112,49 @@ export default function TermsOfService() {
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">9. Disclaimer of Warranties</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">10. Disclaimer of Warranties</h2>
             <p>
               Tripseek is provided &quot;as is&quot; and &quot;as available&quot; without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the service will be uninterrupted, error-free, or free of viruses or other harmful components.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">10. Limitation of Liability</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">11. Limitation of Liability</h2>
             <p>
               To the fullest extent permitted by law, Tripseek shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of the app — including, without limitation, lost profits, lost data, travel disruptions, or personal injury — even if we have been advised of the possibility of such damages.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">11. Indemnification</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">12. Indemnification</h2>
             <p>
               You agree to indemnify and hold harmless Tripseek and its affiliates, officers, agents, and employees from any claims, liabilities, damages, losses, and expenses arising from your use of the app or violation of these terms.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">12. Modifications to the Service</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">13. Modifications to the Service</h2>
             <p>
               We reserve the right to modify, suspend, or discontinue any part of the service at any time without prior notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the service.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">13. Changes to These Terms</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">14. Changes to These Terms</h2>
             <p>
               We may update these Terms of Service from time to time. We will notify you of significant changes through the app or via email. Your continued use of the app after changes are posted constitutes your acceptance of the updated terms.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">14. Governing Law</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">15. Governing Law</h2>
             <p>
               These terms are governed by and construed in accordance with applicable law. Any disputes arising from these terms or your use of the app shall be resolved through binding arbitration or in the courts of competent jurisdiction.
             </p>
           </section>
 
           <section>
-            <h2 className="text-lg font-semibold text-black mb-3">15. Contact Us</h2>
+            <h2 className="text-lg font-semibold text-black mb-3">16. Contact Us</h2>
             <p>
               If you have questions about these Terms of Service, please contact us at:
             </p>

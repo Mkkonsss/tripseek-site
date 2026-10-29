@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
 
       <article className="max-w-2xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Privacy Policy</h1>
-        <p className="text-sm text-black/40 mb-12">Last updated: October 27, 2026</p>
+        <p className="text-sm text-black/40 mb-12">Last updated: October 28, 2026</p>
 
         <div className="prose prose-sm max-w-none space-y-10 text-black/80 leading-relaxed">
 
@@ -86,7 +86,8 @@ export default function PrivacyPolicy() {
               <li><strong>Expo</strong> &mdash; app updates, plus crash and performance reports</li>
               <li><strong>OpenStreetMap services</strong> (OpenStreetMap Foundation map tiles, Photon by Komoot, Overpass API, OSRM, and Nominatim) &mdash; maps, place lookups, and driving times. Your device contacts these directly, so they receive your IP address and the areas or places being looked up</li>
               <li><strong>SerpApi</strong> &mdash; flight searches; receives the airports and dates searched</li>
-              <li><strong>SendGrid</strong> and our email forwarding provider &mdash; receive emails sent to tripseekapp.com addresses, including forwarded booking emails</li>
+              <li><strong>Cloudflare</strong> &mdash; receives emails sent to tripseekapp.com addresses, including forwarded booking emails, and passes them on to us (SendGrid did this until early November 2026)</li>
+              <li><strong>Resend</strong> &mdash; sends account emails, such as sign-up confirmation and password reset; receives your email address</li>
               <li><strong>Stay22 and Booking.com</strong> &mdash; when you tap a hotel or activity booking link, you go to Booking.com through Stay22, which records the click for our affiliate commission</li>
             </ul>
             <p className="mt-3">

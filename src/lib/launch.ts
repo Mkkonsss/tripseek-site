@@ -1,5 +1,5 @@
 /** Flip to true once Apple approves the app: buttons go back to "Download" and link to the listing. */
-export const APP_LIVE = false;
+export const APP_LIVE = true;
 
 export const APP_STORE_URL = "https://apps.apple.com/app/tripseek/id6819936121";
 

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-const APP_STORE_URL = "https://apps.apple.com/app/tripseek/id6746416905";
+import { APP_STORE_URL } from "@/lib/launch";
 
 export default function JoinClient({ code }: { code: string }) {
   return (

@@ -2,13 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Nav from "@/components/nav";
 import WaitlistForm from "@/components/waitlist-form";
-import InAppBrowserHint from "@/components/in-app-browser-hint";
 import { APP_LIVE, APP_STORE_URL } from "@/lib/launch";
 
 export default function Home() {
   return (
     <main className="flex flex-col min-h-screen bg-white text-black">
-      <InAppBrowserHint />
 
       {/* Hero — full viewport with photo, overlay nav, split layout */}
       <section className="relative w-full h-screen">

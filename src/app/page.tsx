@@ -32,7 +32,7 @@ export default function Home() {
               {/* Left — headline */}
               <div className="max-w-xl">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-[1.05]">
-                  Your whole trip.<br />Organized by AI.
+                  Your personal<br />AI travel assistant
                 </h1>
               </div>
               {/* Right — description */}

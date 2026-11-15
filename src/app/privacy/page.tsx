@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-lg font-semibold text-black mb-3">1. Introduction</h2>
             <p>
-              Tripseek (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the Tripseek mobile application. This Privacy Policy explains what we collect, how we use it, who we share it with, and the choices you have. If you disagree with it, please don&apos;t use the app.
+              Digital Vector Corp. (&quot;Tripseek,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the Tripseek mobile application. This Privacy Policy explains what we collect, how we use it, who we share it with, and the choices you have. If you disagree with it, please don&apos;t use the app.
             </p>
           </section>
 
@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
               If you have questions or concerns about this Privacy Policy, please contact us at:
             </p>
             <div className="mt-3 p-4 border border-black/10 rounded-xl text-sm">
-              <p className="font-medium">Tripseek</p>
+              <p className="font-medium">Tripseek (Digital Vector Corp.)</p>
               <p className="text-black/60 mt-1">
                 <a href="mailto:privacy@tripseekapp.com" className="underline">privacy@tripseekapp.com</a>
               </p>
@@ -168,7 +168,7 @@ export default function PrivacyPolicy() {
       {/* Footer */}
       <footer className="border-t border-black/10 py-8 px-6 mt-auto">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/40">
-          <span>© {new Date().getFullYear()} Tripseek. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Digital Vector Corp. Tripseek is operated by Digital Vector Corp. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link>

@@ -22,7 +22,7 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-lg font-semibold text-black mb-3">1. Acceptance of Terms</h2>
             <p>
-              By downloading, installing, or using the Tripseek mobile application, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the app. These terms apply to all users of the app.
+              Tripseek is operated by Digital Vector Corp. (&quot;Tripseek,&quot; &quot;we,&quot; or &quot;us&quot;). By downloading, installing, or using the Tripseek mobile application, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the app. These terms apply to all users of the app.
             </p>
           </section>
 
@@ -159,7 +159,7 @@ export default function TermsOfService() {
               If you have questions about these Terms of Service, please contact us at:
             </p>
             <div className="mt-3 p-4 border border-black/10 rounded-xl text-sm">
-              <p className="font-medium">Tripseek</p>
+              <p className="font-medium">Tripseek (Digital Vector Corp.)</p>
               <p className="text-black/60 mt-1">
                 <a href="mailto:legal@tripseekapp.com" className="underline">legal@tripseekapp.com</a>
               </p>
@@ -172,7 +172,7 @@ export default function TermsOfService() {
       {/* Footer */}
       <footer className="border-t border-black/10 py-8 px-6 mt-auto">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/40">
-          <span>© {new Date().getFullYear()} Tripseek. All rights reserved.</span>
+          <span>© {new Date().getFullYear()} Digital Vector Corp. Tripseek is operated by Digital Vector Corp. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link>

@@ -302,7 +302,7 @@ export default function Home() {
       <footer className="border-t border-black/8 py-8 px-6">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-black/30">
           <Image src="/logo-dark.png" alt="Tripseek" width={100} height={28} className="h-6 w-auto" />
-          <span>&copy; {new Date().getFullYear()} Tripseek. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Digital Vector Corp. Tripseek is operated by Digital Vector Corp. All rights reserved.</span>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link>

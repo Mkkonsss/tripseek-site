@@ -34,7 +34,10 @@ export default function PrivacyPolicy() {
               <li><strong>Travel preferences:</strong> interests, pace, budget, and other settings, including dietary needs and accessibility or mobility needs if you choose to add them.</li>
               <li><strong>Trip data:</strong> destinations, dates, itineraries, activities, notes, boards, and bookings you add.</li>
               <li><strong>AI chat messages:</strong> what you send to Tripseek AI and its replies.</li>
-              <li><strong>Things you import:</strong> links, text, and screenshots you add to boards.</li>
+              <li><strong>Things you import or share:</strong> links, text, and screenshots you add to boards or share to Tripseek from other apps (Share &rarr; Tripseek). For a shared link, our servers look up the page&apos;s public title and description so Tripseek knows what it&apos;s about.</li>
+              <li><strong>Setup interview:</strong> your answers when you set up Tripseek (a trip you loved, what you love doing, anything to keep in mind, what&apos;s next), which you can change in the app.</li>
+              <li><strong>Voice:</strong> if you talk to Tripseek (the mic, a call, or the setup interview), Apple&apos;s speech recognition turns what you say into text on your device, and only that text is sent to us. Tripseek&apos;s spoken replies are made from its reply text by Google Cloud Text-to-Speech.</li>
+              <li><strong>Emails you ask Tripseek to send:</strong> the recipient, subject, and message of emails you approve (see Section 5), and replies to them that reach our address.</li>
               <li><strong>Forwarded booking emails:</strong> confirmation emails you forward to our booking address. We keep the booking details we extract, plus the email&apos;s subject and sender &mdash; not the full email.</li>
               <li><strong>Reports and feedback:</strong> if you rate or report an AI reply, we keep that reply and the reason you gave.</li>
               <li><strong>Support requests:</strong> anything you send us by email.</li>
@@ -46,6 +49,13 @@ export default function PrivacyPolicy() {
               <li><strong>Device and diagnostics:</strong> device type, operating system, an app-generated device identifier, crash reports, and performance data.</li>
               <li><strong>Usage data:</strong> features used and screens viewed, to keep the app working well.</li>
               <li><strong>Subscription status:</strong> your Tripseek+ plan and renewal date. Apple handles payment; we never see your card details.</li>
+              <li><strong>Notification token:</strong> if you allow notifications, a push token so Tripseek can message you about your trips (alerts, updates, and replies).</li>
+            </ul>
+            <h3 className="font-medium text-black mt-4 mb-2">Features that stay on your device</h3>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>Calendar:</strong> if you turn it on, Tripseek adds your trips and plans to a &ldquo;Tripseek&rdquo; calendar on your iPhone. It only writes to that calendar and doesn&apos;t send your other calendar events to us.</li>
+              <li><strong>Apple Wallet:</strong> when you add a booking to Wallet, our servers make the pass from that booking&apos;s details and give it to your iPhone. We don&apos;t keep a copy of the pass.</li>
+              <li><strong>Siri:</strong> &ldquo;Ask Tripseek&rdquo; and other Siri shortcuts open the app with your question; Apple handles the voice part.</li>
             </ul>
           </section>
 
@@ -68,7 +78,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-lg font-semibold text-black mb-3">4. Tripseek AI (Anthropic)</h2>
             <p className="mb-3">
-              Tripseek AI is powered by our AI provider, Anthropic (Claude). It only runs after you turn it on in the app, which asks for your permission the first time you use an AI feature. When it&apos;s on, the content you give an AI feature &mdash; your messages, links, screenshots, and forwarded booking emails &mdash; is sent to Anthropic together with relevant trip details, your travel preferences (including dietary and accessibility needs), and, for nearby suggestions, your location.
+              Tripseek AI is powered by our AI provider, Anthropic (Claude). It only runs after you turn it on in the app, which asks for your permission the first time you use an AI feature. When it&apos;s on, the content you give an AI feature &mdash; your messages, setup interview answers, links (with the page title and description we look up), screenshots and photos you share, forwarded booking emails, and replies to emails Tripseek sent for you &mdash; is sent to Anthropic together with relevant trip details, your travel preferences (including dietary and accessibility needs), and, for nearby suggestions, your location.
             </p>
             <p>
               Anthropic processes this data only to produce responses for you, under its agreement with us, and doesn&apos;t use it to train its models. You can turn Tripseek AI off at any time in Profile &rarr; Settings &rarr; Tripseek AI. While it&apos;s off, nothing is sent to Anthropic, AI features are paused, and booking emails you forward are not read.
@@ -101,6 +111,7 @@ export default function PrivacyPolicy() {
               <li><strong>Supabase</strong> (hosted on AWS) &mdash; database, accounts, and server functions</li>
               <li><strong>Anthropic</strong> &mdash; Tripseek AI (see Section 4)</li>
               <li><strong>Google (Gmail)</strong> &mdash; only if you connect Gmail: sends the emails you approve from your account (see Section 5)</li>
+              <li><strong>Google Cloud Text-to-Speech</strong> &mdash; turns Tripseek&apos;s replies into its spoken voice; receives the reply text only</li>
               <li><strong>Google Maps Platform</strong> &mdash; place search, details, and photos; receives search terms and, for nearby results, a location</li>
               <li><strong>Apple</strong> &mdash; Sign in with Apple, App Store payments, and weather forecasts (Apple WeatherKit), which receive a trip&apos;s location and dates</li>
               <li><strong>Expo</strong> &mdash; app updates, plus crash and performance reports</li>

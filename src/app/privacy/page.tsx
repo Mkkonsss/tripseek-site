@@ -86,7 +86,7 @@ export default function PrivacyPolicy() {
               <li><strong>What we send and keep:</strong> the email you approved goes from your address to the recipient you saw. We keep the recipient, subject, and message so you can see what was sent and so Tripseek can tell you when they reply. Replies reach you as normal; they are also sent to bookings@tripseekapp.com (set as a reply address), so Tripseek can let you know about them.</li>
               <li><strong>How drafts are written:</strong> Tripseek AI (Anthropic, see Section 4) writes the draft from your conversation. No Gmail data is used to train AI models, by us or by Anthropic.</li>
               <li><strong>Tokens:</strong> the access Google gives us is stored encrypted on our servers, is never shown in the app, and is only used to send the emails you approve.</li>
-              <li><strong>Disconnecting:</strong> tap Disconnect in the app (Tripseek tab &rarr; + &rarr; Gmail) to revoke our access at Google and delete it from our servers. You can also remove Tripseek at <a href="https://myaccount.google.com/permissions" className="underline">myaccount.google.com/permissions</a>.</li>
+              <li><strong>Disconnecting:</strong> tap Remove next to Gmail in the app (Tripseek tab &rarr; +) to revoke our access at Google and delete it from our servers. You can also remove Tripseek at <a href="https://myaccount.google.com/permissions" className="underline">myaccount.google.com/permissions</a>.</li>
             </ul>
             <p>
               Tripseek&apos;s use and transfer to any other app of information received from Google APIs will adhere to the{' '}
@@ -140,7 +140,7 @@ export default function PrivacyPolicy() {
               <li><strong>Turn off Tripseek AI</strong> in Profile &rarr; Settings &rarr; Tripseek AI to stop sending data to Anthropic.</li>
               <li><strong>Location, photos, and notifications</strong> can be turned off at any time in your iPhone&apos;s Settings. The app keeps working without them.</li>
               <li><strong>Travel Memory</strong> can be paused or cleared in the app.</li>
-              <li><strong>Disconnect Gmail</strong> at any time from the Tripseek tab &rarr; + &rarr; Gmail &rarr; Disconnect.</li>
+              <li><strong>Disconnect Gmail</strong> at any time: Tripseek tab &rarr; + &rarr; Remove next to Gmail.</li>
               <li><strong>Export your data</strong> from Profile &rarr; Settings &rarr; Account &rarr; Export my data.</li>
               <li><strong>Delete your account</strong> from Profile &rarr; Settings &rarr; Account &rarr; Delete account (see Section 10).</li>
             </ul>

@@ -37,6 +37,9 @@ export default function PrivacyPolicy() {
               <li><strong>Things you import or share:</strong> links, text, and screenshots you add to boards or share to Tripseek from other apps (Share &rarr; Tripseek). For a shared link, our servers look up the page&apos;s public title and description so Tripseek knows what it&apos;s about.</li>
               <li><strong>Setup interview:</strong> your answers when you set up Tripseek (a trip you loved, what you love doing, anything to keep in mind, what&apos;s next), which you can change in the app.</li>
               <li><strong>Voice:</strong> if you talk to Tripseek (the mic, a call, or the setup interview), Apple&apos;s speech recognition turns what you say into text (Apple may do this on your device or on its servers, under Apple&apos;s privacy policy), and only that text is sent to us. To recognise names better, the names of your trips&apos; places and plans are given to Apple&apos;s recognizer as hints. Tripseek&apos;s spoken replies are made from its reply text by Google Cloud Text-to-Speech.</li>
+              <li><strong>Flights you book in Tripseek:</strong> each traveler&apos;s title, name, date of birth and gender as on their passport, plus a contact email and phone number. We send these to our booking partner Duffel and the airline only when you tap Book, to issue the ticket, and keep the booking details (reference, flights, times, rules) with your trip.</li>
+              <li><strong>Shared costs:</strong> costs you log on a trip, who paid, and who they&apos;re split between (by the names you use).</li>
+              <li><strong>What Tripseek remembers:</strong> lasting facts you tell Tripseek about yourself (for example your passport country or home airport) so it can help on future trips. You can ask Tripseek to forget them, or contact us to delete them.</li>
               <li><strong>Emails you ask Tripseek to send:</strong> the recipient, subject, and message of emails you approve (see Section 5), and replies to them that reach our address.</li>
               <li><strong>Forwarded booking emails:</strong> confirmation emails you forward to our booking address. We keep the booking details we extract, plus the email&apos;s subject and sender &mdash; not the full email.</li>
               <li><strong>Reports and feedback:</strong> if you rate or report an AI reply, we keep that reply and the reason you gave.</li>
@@ -111,6 +114,8 @@ export default function PrivacyPolicy() {
               <li><strong>Supabase</strong> (hosted on AWS) &mdash; database, accounts, and server functions</li>
               <li><strong>Anthropic</strong> &mdash; Tripseek AI (see Section 4)</li>
               <li><strong>Google (Gmail)</strong> &mdash; only if you connect Gmail: sends the emails you approve from your account (see Section 5)</li>
+              <li><strong>Duffel</strong> &mdash; searches and books flights; receives your search (places, dates, number of travelers) and, when you book, each traveler&apos;s passport name, date of birth, gender and the contact details, which it passes to the airline</li>
+              <li><strong>AeroDataBox</strong> &mdash; live flight status; receives only flight numbers and dates, not who is flying</li>
               <li><strong>Google Cloud Text-to-Speech</strong> &mdash; turns Tripseek&apos;s replies into its spoken voice; receives the reply text only</li>
               <li><strong>Google Maps Platform</strong> &mdash; place search, details, and photos; receives search terms and, for nearby results, a location</li>
               <li><strong>Apple</strong> &mdash; Sign in with Apple, App Store payments, and weather forecasts (Apple WeatherKit), which receive a trip&apos;s location and dates</li>

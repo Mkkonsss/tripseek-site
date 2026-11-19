@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
 
       <article className="max-w-2xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Privacy Policy</h1>
-        <p className="text-sm text-black/40 mb-12">Last updated: November 17, 2026</p>
+        <p className="text-sm text-black/40 mb-12">Last updated: November 18, 2026</p>
 
         <div className="prose prose-sm max-w-none space-y-10 text-black/80 leading-relaxed">
 
@@ -42,12 +42,15 @@ export default function PrivacyPolicy() {
               <li><strong>What Tripseek remembers:</strong> lasting facts you tell Tripseek about yourself (for example your passport country or home airport) so it can help on future trips. You can ask Tripseek to forget them, or contact us to delete them.</li>
               <li><strong>Emails you ask Tripseek to send:</strong> the recipient, subject, and message of emails you approve (see Section 5), and replies to them that reach our address.</li>
               <li><strong>Forwarded booking emails:</strong> confirmation emails you forward to our booking address. We keep the booking details we extract, plus the email&apos;s subject and sender &mdash; not the full email.</li>
-              <li><strong>Reports and feedback:</strong> if you rate or report an AI reply, we keep that reply and the reason you gave.</li>
+              <li><strong>Username:</strong> Tripseek gives you a username based on your name (you can change it in your profile) so friends can find you and add you to trips and group chats.</li>
+              <li><strong>Group chats:</strong> messages you send in group chats, who is in each chat, votes in polls, and when you last read a chat. Tripseek AI reads a group chat&apos;s recent messages when someone in it asks Tripseek something.</li>
+              <li><strong>Reports and feedback:</strong> if you rate or report an AI reply, we keep that reply and the reason you gave. If you report someone in a group chat, we keep the report, the reason, and a copy of the message you reported, so our team can review it.</li>
+              <li><strong>Blocks:</strong> the people you block. Only you can see who you&apos;ve blocked; the person you block isn&apos;t told.</li>
               <li><strong>Support requests:</strong> anything you send us by email.</li>
             </ul>
             <h3 className="font-medium text-black mb-2">Information collected automatically</h3>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong>Location:</strong> if you allow it, your device&apos;s location while you use the app, to show places near you on the Home and Explore tabs and to suggest things to do nearby. We use it at the time of the request and don&apos;t keep a history of where you&apos;ve been.</li>
+              <li><strong>Location:</strong> if you allow it, your device&apos;s location while you use the app, to show places near you on the Home and Explore tabs and to suggest things to do nearby. When you send &ldquo;My location&rdquo; in the Tripseek chat, it&apos;s sent with that message so Tripseek can suggest places close to you, and the area name (for example a neighborhood and city) is kept with the message. We don&apos;t keep a history of where you&apos;ve been.</li>
               <li><strong>Travel Memory:</strong> preferences Tripseek learns from your choices (for example, places you save or skip). You can view, delete, or turn this off in the app.</li>
               <li><strong>Device and diagnostics:</strong> device type, operating system, an app-generated device identifier, crash reports, and performance data.</li>
               <li><strong>Usage data:</strong> features used and screens viewed, to keep the app working well.</li>
@@ -137,6 +140,7 @@ export default function PrivacyPolicy() {
             <ul className="list-disc pl-5 space-y-1">
               <li><strong>With service providers</strong> listed in Section 6</li>
               <li><strong>When you share a trip:</strong> people you invite can see and edit it, and anyone with a trip&apos;s share link can view its details</li>
+              <li><strong>In group chats:</strong> everyone in a chat sees your name, username, profile photo, messages and votes. If the chat is about a trip, Tripseek may mention that trip&apos;s plans, flights and stays in the chat, but only when everyone in the chat is on that trip. It never shares your passport details, payment details or what you owe in a group chat.</li>
               <li><strong>For legal reasons:</strong> if required by law, court order, or a government authority</li>
               <li><strong>In a business transfer:</strong> as part of a merger, acquisition, or sale of assets, with notice to you</li>
               <li><strong>With your consent:</strong> for anything else, only if you explicitly agree</li>

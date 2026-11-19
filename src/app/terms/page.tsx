@@ -15,7 +15,7 @@ export default function TermsOfService() {
 
       <article className="max-w-2xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Terms of Service</h1>
-        <p className="text-sm text-black/40 mb-12">Last updated: October 27, 2026</p>
+        <p className="text-sm text-black/40 mb-12">Last updated: November 18, 2026</p>
 
         <div className="prose prose-sm max-w-none space-y-10 text-black/80 leading-relaxed">
 
@@ -77,7 +77,13 @@ export default function TermsOfService() {
               <li>Impersonate any person or entity</li>
               <li>Use automated scripts or bots to access the service</li>
               <li>Circumvent any security or access controls</li>
+              <li>Bully, harass, threaten or abuse anyone, including in group chats</li>
+              <li>Post hateful, sexual, violent or otherwise objectionable content, or spam or scams</li>
+              <li>Share someone else&apos;s private information without their permission</li>
             </ul>
+            <p className="mt-3">
+              We have zero tolerance for objectionable content or abusive users. In any group chat you can report a message or a person and block them: blocking hides their messages from you and stops them adding you to chats or trips. We review reports within 24 hours, remove content that breaks these rules, and suspend or remove the accounts of people who post it.
+            </p>
           </section>
 
           <section>

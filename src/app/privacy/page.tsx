@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
 
       <article className="max-w-2xl mx-auto px-6 py-16 w-full">
         <h1 className="text-4xl font-bold tracking-tight mb-3">Privacy Policy</h1>
-        <p className="text-sm text-black/40 mb-12">Last updated: November 18, 2026</p>
+        <p className="text-sm text-black/40 mb-12">Last updated: November 20, 2026</p>
 
         <div className="prose prose-sm max-w-none space-y-10 text-black/80 leading-relaxed">
 
@@ -50,7 +50,7 @@ export default function PrivacyPolicy() {
             </ul>
             <h3 className="font-medium text-black mb-2">Information collected automatically</h3>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong>Location:</strong> if you allow it, your device&apos;s location while you use the app, to show places near you on the Home and Explore tabs and to suggest things to do nearby. When you send &ldquo;My location&rdquo; in the Tripseek chat, it&apos;s sent with that message so Tripseek can suggest places close to you, and the area name (for example a neighborhood and city) is kept with the message. We don&apos;t keep a history of where you&apos;ve been.</li>
+              <li><strong>Location:</strong> if you allow it, your device&apos;s location while you use the app, to show places near you and to suggest things to do nearby. When you send &ldquo;My location&rdquo; in the Tripseek chat, it&apos;s sent with that message so Tripseek can suggest places close to you, and the area name (for example a neighborhood and city) is kept with the message. If you turn on <strong>Nearby alerts</strong> (and allow location &ldquo;Always&rdquo;), then only on the days of a trip your phone sends its location every few hundred metres, even when the app is closed, so Tripseek can tell you when you&apos;re a few minutes from a place you planned or saved. Each location is compared with your places and then discarded. You can turn Nearby alerts off in the app at any time. We don&apos;t keep a history of where you&apos;ve been.</li>
               <li><strong>Travel Memory:</strong> preferences Tripseek learns from your choices (for example, places you save or skip). You can view, delete, or turn this off in the app.</li>
               <li><strong>Device and diagnostics:</strong> device type, operating system, an app-generated device identifier, crash reports, and performance data.</li>
               <li><strong>Usage data:</strong> features used and screens viewed, to keep the app working well.</li>
@@ -118,16 +118,20 @@ export default function PrivacyPolicy() {
               <li><strong>Anthropic</strong> &mdash; Tripseek AI (see Section 4)</li>
               <li><strong>Google (Gmail)</strong> &mdash; only if you connect Gmail: sends the emails you approve from your account (see Section 5)</li>
               <li><strong>Duffel</strong> &mdash; searches and books flights; receives your search (places, dates, number of travelers) and, when you book, each traveler&apos;s passport name, date of birth, gender and the contact details, which it passes to the airline</li>
-              <li><strong>AeroDataBox</strong> &mdash; live flight status; receives only flight numbers and dates, not who is flying</li>
+              <li><strong>Stripe</strong> &mdash; card payments when you book a flight in Tripseek; your card details go straight to Stripe (we never see your full card number), along with the amount</li>
+              <li><strong>OAG and AeroDataBox</strong> &mdash; live flight status (delays, gates, cancellations); receive only flight numbers and dates, not who is flying</li>
+              <li><strong>adsb.lol</strong> &mdash; a public aircraft-tracking network we ask whether a flight is in the air yet; it receives only the flight&apos;s call sign, nothing about you</li>
+              <li><strong>Photon</strong> &mdash; runs Tripseek&apos;s iMessage line, if you text Tripseek; receives your phone number and the messages you and Tripseek send</li>
               <li><strong>Google Cloud Text-to-Speech</strong> &mdash; turns Tripseek&apos;s replies into its spoken voice; receives the reply text only</li>
               <li><strong>Google Maps Platform</strong> &mdash; place search, details, and photos; receives search terms and, for nearby results, a location</li>
-              <li><strong>Apple</strong> &mdash; Sign in with Apple, App Store payments, and weather forecasts (Apple WeatherKit), which receive a trip&apos;s location and dates</li>
+              <li><strong>Apple</strong> &mdash; Sign in with Apple, App Store payments, weather forecasts (Apple WeatherKit), which receive a trip&apos;s location and dates, and push notifications, including the travel-day flight updates on your Lock Screen (Live Activities), which receive the flight&apos;s details shown there</li>
               <li><strong>Expo</strong> &mdash; app updates, plus crash and performance reports</li>
               <li><strong>OpenStreetMap services</strong> (OpenStreetMap Foundation map tiles, Photon by Komoot, Overpass API, OSRM, and Nominatim) &mdash; maps, place lookups, and driving times. Your device contacts these directly, so they receive your IP address and the areas or places being looked up</li>
               <li><strong>SerpApi</strong> &mdash; flight searches; receives the airports and dates searched</li>
               <li><strong>Cloudflare</strong> &mdash; receives emails sent to tripseekapp.com addresses, including forwarded booking emails, and passes them on to us (SendGrid did this until early November 2026)</li>
               <li><strong>Resend</strong> &mdash; sends account emails, such as sign-up confirmation and password reset; receives your email address</li>
               <li><strong>Stay22 and Booking.com</strong> &mdash; when you tap a hotel or activity booking link, you go to Booking.com through Stay22, which records the click for our affiliate commission</li>
+              <li><strong>SafetyWing</strong> &mdash; when you tap a travel insurance link, you go to SafetyWing, which records the click for our referral commission</li>
             </ul>
             <p className="mt-3">
               We share personal data with these providers only as needed for them to provide their service to Tripseek, and we require them to give your data the same or equal protection as described in this Privacy Policy.
